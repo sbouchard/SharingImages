@@ -16,7 +16,7 @@
 		A57FB4D71BDE98E800549DF5 /* MyCollectionViewCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57FB4D61BDE98E800549DF5 /* MyCollectionViewCollectionViewController.m */; };
 		A57FB4D91BDE9F3900549DF5 /* imageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A57FB4D81BDE9F3900549DF5 /* imageCell.xib */; };
 		A57FB4DC1BDE9F6C00549DF5 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A57FB4DB1BDE9F6C00549DF5 /* ImageCollectionViewCell.m */; };
-		A57FB4DF1BDEA53900549DF5 /* SharingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A57FB4DE1BDEA53900549DF5 /* SharingImage.m */; };
+		A57FB4DF1BDEA53900549DF5 /* SharingImageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A57FB4DE1BDEA53900549DF5 /* SharingImageDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +35,8 @@
 		A57FB4D81BDE9F3900549DF5 /* imageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = imageCell.xib; sourceTree = "<group>"; };
 		A57FB4DA1BDE9F6C00549DF5 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
 		A57FB4DB1BDE9F6C00549DF5 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
-		A57FB4DD1BDEA53900549DF5 /* SharingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharingImage.h; sourceTree = "<group>"; };
-		A57FB4DE1BDEA53900549DF5 /* SharingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharingImage.m; sourceTree = "<group>"; };
+		A57FB4DD1BDEA53900549DF5 /* SharingImageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharingImageDelegate.h; sourceTree = "<group>"; };
+		A57FB4DE1BDEA53900549DF5 /* SharingImageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharingImageDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 				A57FB4CF1BDE988700549DF5 /* Info.plist */,
 				A57FB4BE1BDE988700549DF5 /* Supporting Files */,
 				A57FB4D81BDE9F3900549DF5 /* imageCell.xib */,
-				A57FB4DD1BDEA53900549DF5 /* SharingImage.h */,
-				A57FB4DE1BDEA53900549DF5 /* SharingImage.m */,
+				A57FB4DD1BDEA53900549DF5 /* SharingImageDelegate.h */,
+				A57FB4DE1BDEA53900549DF5 /* SharingImageDelegate.m */,
 			);
 			path = SharingImagesOnSocial;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 			files = (
 				A57FB4C61BDE988700549DF5 /* ViewController.m in Sources */,
 				A57FB4D71BDE98E800549DF5 /* MyCollectionViewCollectionViewController.m in Sources */,
-				A57FB4DF1BDEA53900549DF5 /* SharingImage.m in Sources */,
+				A57FB4DF1BDEA53900549DF5 /* SharingImageDelegate.m in Sources */,
 				A57FB4DC1BDE9F6C00549DF5 /* ImageCollectionViewCell.m in Sources */,
 				A57FB4C31BDE988700549DF5 /* AppDelegate.m in Sources */,
 				A57FB4C01BDE988700549DF5 /* main.m in Sources */,
@@ -320,6 +320,7 @@
 				A57FB4D41BDE988700549DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

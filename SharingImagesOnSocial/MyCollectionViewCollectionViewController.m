@@ -8,11 +8,11 @@
 
 #import "MyCollectionViewCollectionViewController.h"
 #import "ImageCollectionViewCell.h"
-#import "SharingImage.h"
+#import "SharingImageDelegate.h"
 
 @interface MyCollectionViewCollectionViewController ()
 @property (nonatomic, strong) NSArray *imagesArray;
-@property (nonatomic, strong) SharingImage *sharingImageDelegate;
+@property (nonatomic, strong) SharingImageDelegate *sharingImageDelegate;
 @end
 
 @implementation MyCollectionViewCollectionViewController
@@ -22,7 +22,7 @@ static NSString * const reuseIdentifier = @"imageCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.sharingImageDelegate = [[SharingImage alloc] init];
+    self.sharingImageDelegate = [[SharingImageDelegate alloc] init];
     self.imagesArray = @[[UIImage imageNamed:@"ewok1"], [UIImage imageNamed:@"ewok2"], [UIImage imageNamed:@"ewok3"]];
     
     // Register cell classes

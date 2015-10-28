@@ -6,13 +6,13 @@
 //  Copyright © 2015 Solutions Waizu inc. All rights reserved.
 //
 
-#import "SharingImage.h"
+#import "SharingImageDelegate.h"
 
-@interface SharingImage()
+@interface SharingImageDelegate()
 
 @end
 
-@implementation SharingImage
+@implementation SharingImageDelegate
 
 
 - (IBAction)shareOneImage:(id)sender{
@@ -29,7 +29,7 @@
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
         
         
-        __block SharingImage *sid = self;
+        __block SharingImageDelegate *sid = self;
         
         // Share Selected Image
         // [R559] - One picture to share (select only one at a time, not multiple)
@@ -86,6 +86,13 @@
     // Email "Subject":  <Patient First Name>'s <Service Category Name> Image[s]
     // Email "Body":  blank.
     [shareCtrl setValue:@"<Patient First Name>'s <Service Category Name> Image[s]" forKey:@"subject"];
+    
+    [shareCtrl setCompletionWithItemsHandler:^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
+        if (completed) {
+            NSLog(@"The selected activity was %@", activityType);
+        }
+     }];
+    
     
     // Present the controller
     [ctrl presentViewController:shareCtrl animated:YES completion:nil];

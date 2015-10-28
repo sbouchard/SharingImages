@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SharingImage : NSObject
+@interface SharingImageDelegate : NSObject
 
 - (void) shareimagesFromController:(UIViewController*) controller withImagesList:(NSArray *)imgList selectedImg:(long)selImgIndex;
 
